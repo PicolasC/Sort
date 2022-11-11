@@ -3,7 +3,7 @@ package srt;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class QuickS {//O(nlog2n)
+public class QuickS {//PiorCaso O(n¬≤)/MelhorCaso O(nlog2n)
 	public static void main(String[] args) {
 	Scanner scan = new Scanner(System.in);
 	int aux,x=0,y=1;
@@ -16,14 +16,14 @@ public class QuickS {//O(nlog2n)
 			+ "\n 4 - 100000"
 			+ "\n 5 - 1000000");
 	x = scan.nextInt();
-	System.out.println("Selecione como ser· organizada"
-			+ "\n 1 - AleatÛria"
+	System.out.println("Selecione como ser√° organizada"
+			+ "\n 1 - Aleat√≥ria"
 			+ "\n 2 - Ordenado Crescentemente"
 			+ "\n 3 - Ordenado Decrescentemente");
 	y = scan.nextInt();
 	int[] vetor = Aleatorio.alea(x,y);
 	long tempoInicial = System.currentTimeMillis();
-	//System.out.println("Pre sort\n"+Arrays.toString(vetor));//A partir de um certo ponto o codigo decide n„o imprimir
+	//System.out.println("Pre sort\n"+Arrays.toString(vetor));//A partir de um certo ponto o codigo decide n√£o imprimir
     while (troca) {
         troca = false;
         for (int i = 0; i < vetor.length - 1; i++) {
@@ -36,7 +36,7 @@ public class QuickS {//O(nlog2n)
             }
         }
     }
-    //System.out.println("Pos sort\n"+Arrays.toString(vetor));//A partir de um certo ponto o codigo decide n„o imprimir
+    //System.out.println("Pos sort\n"+Arrays.toString(vetor));//A partir de um certo ponto o codigo decide n√£o imprimir
     long tempoFinal = System.currentTimeMillis();
     System.out.println("Inicio: "+tempoInicial+" | Final: "+tempoFinal+" | Tempo gasto: "+(tempoFinal-tempoInicial)+"ms");
 	}
