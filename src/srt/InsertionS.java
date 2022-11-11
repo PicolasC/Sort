@@ -3,7 +3,7 @@ package srt;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class InsertionS {//O(n²)
+public class InsertionS {//PiorCaso O(nÂ²)/CasoMedio O(nÂ²)/MelhorCaso O(n)
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int x=0,y=1;
@@ -15,8 +15,8 @@ public class InsertionS {//O(n²)
 				+ "\n 4 - 100000"
 				+ "\n 5 - 1000000");
 		x = scan.nextInt();
-		System.out.println("Selecione como será organizada"
-				+ "\n 1 - Aleatória"
+		System.out.println("Selecione como serÃ¡ organizada"
+				+ "\n 1 - AleatÃ³ria"
 				+ "\n 2 - Ordenado Crescentemente"
 				+ "\n 3 - Ordenado Decrescentemente");
 		y = scan.nextInt();
