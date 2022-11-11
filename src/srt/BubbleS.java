@@ -3,7 +3,7 @@ package srt;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class BubbleS {//PiorCaso O(n²)/CasoMedio O(n²)/MelhorCaso O(n)
+public class BubbleS {//PiorCaso O(n²)/MelhorCaso O(n)
 	public static void main(String[] args){
 		Scanner scan = new Scanner(System.in);
 		int aux,x=0,y=1;
